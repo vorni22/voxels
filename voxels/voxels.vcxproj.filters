@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\IO">
+      <UniqueIdentifier>{080c2d20-5911-4820-a321-dc754d1982d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\images">
+      <UniqueIdentifier>{de0191ee-92b3-4b48-b4be-9ab0727c1786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\shaders">
+      <UniqueIdentifier>{c36d2675-2237-4b32-a80b-7d4fe8a9120e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\shaders\vertexShaders">
+      <UniqueIdentifier>{239c179d-d293-4d01-8f73-78467eaeeb62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\shaders\fragmentShaders">
+      <UniqueIdentifier>{71da7d01-02c0-4035-aa34-4fe8ff26dea9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\IO">
+      <UniqueIdentifier>{a14a1e69-b258-4e45-b985-52e011c52d46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Graphics">
+      <UniqueIdentifier>{81fd72a0-cedc-4274-9ee8-996776a65a98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics">
+      <UniqueIdentifier>{d9434973-f845-426b-ac1d-d70d06e9709b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\External">
+      <UniqueIdentifier>{f0ae9ea9-2871-4f12-8cac-bd1101df701e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\WorldGeneration">
+      <UniqueIdentifier>{067612a2-14e3-4abc-b4dd-45405c801e9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\WorldGeneration">
+      <UniqueIdentifier>{06dc9c64-4eaa-4d60-bbd1-4e1c10cadedd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Threads">
+      <UniqueIdentifier>{16595f8c-2e28-4cc5-8185-9339e22b0bd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\shaders\geometryShaders">
+      <UniqueIdentifier>{f6ac6b78-09d2-4502-979b-34f414048940}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IO\joystick.cpp">
+      <Filter>Source Files\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IO\keyboard.cpp">
+      <Filter>Source Files\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IO\mouse.cpp">
+      <Filter>Source Files\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\glad.c">
+      <Filter>Source Files\External</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\stb.cpp">
+      <Filter>Source Files\External</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\shader.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\texture.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\camera.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\WorldGeneration\chunck.cpp">
+      <Filter>Source Files\WorldGeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="src\WorldGeneration\chunckGenerator.cpp">
+      <Filter>Source Files\WorldGeneration</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Graphics\buffers.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\IO\mouse.h">
+      <Filter>Header Files\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IO\keyboard.h">
+      <Filter>Header Files\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IO\joystick.h">
+      <Filter>Header Files\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Graphics\shader.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Graphics\texture.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Graphics\camera.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WorldGeneration\chunck.h">
+      <Filter>Header Files\WorldGeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WorldGeneration\chunckGenerator.h">
+      <Filter>Header Files\WorldGeneration</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Threads\threadPool.hpp">
+      <Filter>Header Files\Threads</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Noise\FastNoiseLite.h">
+      <Filter>Source Files\External</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Graphics\buffers.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\images\img1.png">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+    <Image Include="assets\images\img2.jpg">
+      <Filter>Resource Files\images</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\shaders\vertexShaders\vertex_core.glsl">
+      <Filter>Resource Files\shaders\vertexShaders</Filter>
+    </None>
+    <None Include="assets\shaders\fragmentShaders\fragment_core.glsl">
+      <Filter>Resource Files\shaders\fragmentShaders</Filter>
+    </None>
+    <None Include="assets\shaders\geometryShaders\geometry_chunck.glsl">
+      <Filter>Resource Files\shaders\geometryShaders</Filter>
+    </None>
+    <None Include="assets\shaders\fragmentShaders\fragment_chunck.glsl">
+      <Filter>Resource Files\shaders\fragmentShaders</Filter>
+    </None>
+    <None Include="assets\shaders\vertexShaders\vertex_chunck.glsl">
+      <Filter>Resource Files\shaders\vertexShaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>
