@@ -1,1 +1,9 @@
 # voxels_project
+author: Vornicescu Vasile
+
+A simple voxel engine written in C++ using OpenGL. The engine generates and renders chunks of voxels. A Chuck is 32 by 32 by 320 voxels.
+The purpose of the project is entirely educational, and it can be used to build upon various different projects. Special attention was given to maximize memory efficiency, especially GPU memory. Also, to speed up the Chuck generation process, a thread pool is used. A main thread controls the engine flow, and a number of other threads generate a Chuck each. A single 64-bit integer is enough to store all information about a voxel and pass it to the GPU. The engine allows opaque and transparent voxels. For now, the engine does not provide any functionality to modify already generated voxels, but this should not be hard to implement using existing infrastructure.
+
+Currently, there are 2 types of blocks: solid and water. Up to 256 blocks can be added, transparent or opaque, with different colors. To understand how to add blocks, see the main.cpp source file at line 104, and then see Block Type enum defined in chuncks.h. Of course just adding a block is not enough, it must be used during terrain generation by the Chunck::getBlock(int x, int y, int z) function, defined in chuncks.h. There, a simple generating function is already provided using the FastNoiseLite library. The function simply generates 2 types of blocks: water and solid. It tries to create rivers and oceans, but the function is very simple, since this is not the purpose of the engine. The user is highly advised to modify this function and experiment with it. The function should calculate what type of block should be the one at the absolute position (x, y, z) in the word (not relative to the Chuck).
+
+Warning: The engine does not check OpenGL and memory allocation errors in order to save efficiency. An error check system must be implemented if needed.
